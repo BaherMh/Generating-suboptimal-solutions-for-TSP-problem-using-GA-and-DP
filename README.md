@@ -2,7 +2,7 @@
 This work presents a combination of Genetic Algorithm (GA) with Dynamic Programming (DP) to generate suboptimal solutions to the well-known Travelling Salesman Problem (TSP). In this work, DP is integrated as a GA operator with a certain probability. In specific, at a given GA generation, the individuals are subdivided into a number of equal segments of genes, and the shortest path on each segment is obtained by applying a DP algorithm. Since the computational complexity of the DP is O($K^2*2^k$), it can be done on small segments. Experimental analyses are conducted to investigate the impact and trade-offs among DP probability, segment size and time processing on the solution quality and computational effort. In addition, we implemented a basic GA approach to compare results and show the contribution of combination approach.
 
 # Introduction
-TSP is stated as following: Let 1,2,…,n be the labels of the n cities and C = [c_(i,j)] be an n x n cost matrix where  [c_(i,j)] denotes the cost of traveling from city i to city j. TSP is the problem of finding the n-city closed tour having the minimum cost such that each city is visited exactly once. The total cost A of a tour is: A(n) = $$A(n) \eq \left( \sum_{i=0}^n-1 c_i,i+) +c_n,1 $$
+TSP is stated as following: Let 1,2,…,n be the labels of the n cities and C = [c_(i,j)] be an n x n cost matrix where  [c_(i,j)] denotes the cost of traveling from city i to city j. TSP is the problem of finding the n-city closed tour having the minimum cost such that each city is visited exactly once. The total cost A of a tour is: A(n) = $$A(n) = \sum_{i=0}^(n-1) c_i,(i+1) + c_n,1 $$
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
